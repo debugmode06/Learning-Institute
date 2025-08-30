@@ -1,0 +1,126 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+
+header {
+  background: #222;
+  color: #fff;
+  padding: 15px 50px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ff9800;
+}
+
+
+.intro{
+  text-align: center;
+  padding: 50px;
+  background: linear-gradient(to right, #f55265, #499cf5);
+  color: white;
+}
+
+.intro h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.intro p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  background: white;
+  color: #ff5722;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #ffccbc;
+}
+
+.course {
+  padding: 47px 20px;
+  text-align: center;
+}
+
+.course h3 {
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+
+.course-grid {
+  display: flex;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap:50px;
+  justify-content: center;
+}
+
+.course-card {
+  background: #9e9d9d;
+  border-radius: 10px;
+  box-shadow: 0px 5px 9px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 230px;
+  transition: transform 0.3s;
+}
+
+.course-card:hover {
+  transform: translateY(-6px);
+}
+
+.course-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.course-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+.course-card p{
+    padding: 5px;
+    margin-bottom: 12px;
+}
+footer {
+  text-align: center;
+  padding: 10px;
+  background: #222;
+  color: white;
+  margin-top: 180px;
+}

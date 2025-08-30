@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Development</title>
+    <link rel="stylesheet" href="course 1.css">
+
+</head>
+
+<body>
+
+    <div class="sidebar">
+        <h2>CDN_</h2>
+        <hr style="width: 170px; border: 1px solid #969494; margin: 30px auto;">
+        <aside class="modules">
+            <details>
+                <summary style="font-size: 20px;">HTML</summary>
+                <p>
+                    <aside>
+                        <details>
+                            <summary>Introduction to HTML</summary>
+
+                            <a href="#M1topic-1">
+                                <li style="font-size: 15px;">Introduction to HTML</li>
+                            </a>
+                            <a href="#M1topic-2">
+                                <li style="font-size: 15px;">Headings & Paragraph</li>
+                            </a>
+                            <a href="#M1topic-3">
+                                <li style="font-size: 15px;">Text Formatting</li>
+                            </a>
+                            <a href="#M1topic-4">
+                                <li style="font-size: 15px;">Comments</li>
+                            </a>
+                        </details>
+
+                    </aside>
+                    <aside>
+                        <details>
+                            <summary>Working with Basic Elements</summary>
+
+                            <a href="#M2topic-1">
+                                <li style="font-size: 15px;">Links</li>
+                            </a>
+                            <a href="#M2topic-2">
+                                <li style="font-size: 15px;">Images</li>
+                            </a>
+                            <a href="#M2topic-3">
+                                <li style="font-size: 15px;">Lists</li>
+                            </a>
+                            <a href="#M2topic-4">
+                                <li style="font-size: 15px;">Tables</li>
+                            </a>
+                        </details>
+
+                    </aside>
+
+                    <aside>
+                        <details>
+                            <summary>Forms and Multimedia</summary>
+
+                            <a href="#M3topic-1">
+                                <li style="font-size: 15px;">Forms (Input, Textarea, Select, Button)</li>
+                            </a>
+                            <a href="#M3topic-2">
+                                <li style="font-size: 15px;">Form Attributes (action, method, placeholder, required, etc.)</li>
+                            </a>
+                            <a href="#M3topic-3">
+                                <li style="font-size: 15px;">Multimedia (Audio & Video)</li>
+                            </a>
+                            <a href="#M3topic-4">
+                                <li style="font-size: 15px;">Semantic Elements (header, footer, article, section, aside)</li>
+                            </a>
+                        </details>
+
+                    </aside>
+                    <aside>
+                        <details>
+                            <summary>Advanced HTML Concepts</summary>
+
+                            <a href="#M4topic-1">
+                                <li style="font-size: 15px;">HTML5 APIs (Canvas, Geolocation, Drag & Drop, LocalStorage)</li>
+                            </a>
+                            <a href="#M4topic-2">
+                                <li style="font-size: 15px;">Iframes & Embedding Content</li>
+                            </a>
+                            <a href="#M4topic-3">
+                                <li style="font-size: 15px;">Meta Tags & SEO Basics</li>
+                            </a>
+                            <a href="#M4topic-4">
+                                <li style="font-size: 15px;">Responsive Design Basics (using HTML + simple CSS concepts)</li>
+                            </a>
+                        </details>
+
+                    </aside>
+
+
+
+
+
+                </p>
+            </details>
+
+        </aside>
+        <a href="#css">CSS</a>
+        <a href="#projects">Java Script</a>
+        <a href="#contact">Projects</a>
+        <hr style="width: 170px; border: 1px solid #969494; margin: 20px auto;">
+    </div>
+
+
+    <section id="M1topic-1">
+        <hr>
+        <h2>Introduction to HTML</h2>
+        <ul>
+            <li>HTML (HyperText Markup Language) is the foundation of web development.</li>
+            <li>It uses tags (like &lt;p&gt;, &lt;h1&gt;, &lt;img&gt;) to tell browsers how to display content.</li>
+            <li>Every HTML document starts with a DOCTYPE declaration and has two main sections: &lt;head&gt; (metadata) <br> and &lt;body&gt; (content).</li>
+            <li>HTML is not a programming language-it’s a markup language that defines structure.</li>
+        </ul>
+
+        <h4 style="margin-left: 15px;">EXAMPLE :</h4>
+        <code class="m1ex-1">
+
+    <ul style="list-style-type: none;">
+      <li>!DOCTYPE html&gt;</li>
+      <li>&nbsp;&lt;html&gt;</li>
+      <li>&nbsp;&nbsp;&lt;head&gt;</li>
+      <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;My First Page&lt;/title&gt;</li>
+      <li>&nbsp;&nbsp;&lt;/head&gt;</li>
+      <li>&nbsp;&nbsp;&lt;body&gt;</li>
+      <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Hello, World!&lt;/h1&gt;</li>
+      <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;This is my first HTML page.&lt;/p&gt;</li>
+      <li>&nbsp;&nbsp;&lt;/body&gt;</li>
+      <li>&lt;/html&gt;</li>
+    </ul>
+  </code>
+        <dl>
+            <dt>Bonus:</dt>
+            <dd>1. Always declare &lt;!DOCTYPE html&gt; for HTML5 compatibility <br> 2. Use proper indentation for readability</dd>
+            <dt>Additional Info:</dt>
+            <dd>- HTML was first created in 1991 by Tim Berners-Lee.<br> - Current version: HTML5 (standard for modern web). <br> - Dont't skip heading levels(e.g., &lt;h2&gt; should follow &lt;h1&gt;).</dd>
+            <h3>Example :</h3>
+            <ul style="list-style-type: none;">
+                <li>&lt;!- - - Correct - - -&gt;</li>
+                <li>&lt;h1&gt;Website title&lt;/h1&gt;</li>
+                <li>&lt;h2&gt;About us&lt;/h2&gt;</li>
+                &nbsp;
+                <li>&lt;!- - - Wrong - - -&gt;</li>
+                <li>&lt;h1&gt;Website title&lt;/h1&gt;</li>
+                <li>&lt;h3&gt;About us&lt;/h3&gt;</li>
+            </ul>
+        </dl>
+
+
+        <section id="M1topic-2">
+            <hr>
+            <h2>Headings and Paragraphs</h2>
+            <ul>
+                <li>Headings (&lt;h1&gt; – &lt;h6&gt;) represent titles and sub-titles, with &lt;h1&gt; being the most important.</li>
+                <li>Paragraphs (&lt;p&gt;) organize text into readable sections.</li>
+                <li>Browsers automatically add line breaks before and after headings/paragraphs.</li>
+                <li>These elements improve both readability and SEO.</li>
+            </ul>
+
+            <h4 style="margin-left: 15px;">EXAMPLE :</h4>
+            <code class="m1ex-2">
+    <ul style="list-style-type: none;">
+      <li>&lt;h1&gt;Main Title&lt;/h1&gt;</li>
+      <li>&lt;h2&gt;Subsection&lt;/h2&gt;</li>
+      <li>&lt;p&gt;This is a paragraph of text explaining the subsection.&lt;/p&gt;</li>
+    </ul>
+  </code>
+
+            <dl>
+                <dt>Bonus:</dt>
+                <dd>1. Use only one &lt;h1&gt; per page (SEO best practice) <br> 2. Don’t use headings just for making text bigger—use CSS for styling</dd>
+                <dt>Additional Info:</dt>
+                <dd>- Headings help screen readers understand document structure.<br> - &lt;p&gt; can include inline tags like &lt;a&gt;, &lt;strong&gt;, &lt;em&gt;.<br> - Use &lt;strong&gt; and &lt;em&gt; instead of &lt;b&gt; and &lt;i&gt; for semantic SEO.</dd>
+            </dl>
+        </section>
+        <section id="M1topic-3">
+            <hr>
+            <h2>Text Formatting</h2>
+            <ul>
+                <li>Text formatting tags add meaning or style to text.</li>
+                <li>&lt;b&gt; / &lt;strong&gt; → bold (strong adds importance)</li>
+                <li>&lt;i&gt; / &lt;em&gt; → italics (emphasized)</li>
+                <li>&lt;u&gt; → underline</li>
+                <li>&lt;mark&gt; → highlight</li>
+            </ul>
+
+            <h4 style="margin-left: 15px;">EXAMPLE :</h4>
+            <code class="m1ex-3">
+    <ul style="list-style-type: none; background-color:#494545">
+      <li>&lt;p&gt; This is &lt;b&gt; bold &lt;/b&gt</li>
+      <li>&lt;i&gt; italic &lt;/i&gt;</li>
+      <li>&lt;u&gt; underlined &lt;/u&gt;</li>
+      <li>&lt;mark&gt; highlighted &lt;/mark&gt; text.&lt;/p&gt;</li>
+    </ul>
+  </code>
+
+            <dl>
+                <dt>Bonus:</dt>
+                <dd>1. Prefer &lt;strong&gt; and &lt;em&gt; over &lt;b&gt; and &lt;i&gt; (better for accessibility)<br> 2. Use &lt;mark&gt; to highlight important points</dd>
+                <dt>Additional Info:</dt>
+                <dd>- Good formatting improves readability and emphasizes meaning.<br>- &lt;sup&gt; (superscript) and &lt;sub&gt; (subscript) are used for mathematical notation or chemical formulas.
+                    <br> Example : <br> &nbsp;&nbsp; H<sub> 2 </sub>O , X <sup>2</sup></dd>
+
+            </dl>
+        </section>
+        <section id="M1topic-4">
+            <hr>
+            <h2>Comments</h2>
+            <ul>
+                <li>Comments in HTML are written inside &lt;!-- --&gt;. </li>
+                <li>They are ignored by browsers but useful for notes, explanations, or temporarily disabling code. </li>
+                <li>Comments help in collaboration and debugging.</li>
+            </ul>
+
+            <h4 style="margin-left: 15px;">EXAMPLE :</h4>
+            <code class="m1ex-4">
+    <ul style="list-style-type: none; background-color: #494545; height: 55px; width: 580px; border-radius: 10px; padding: 10px;" >
+      <li>&lt;p&gt;Hello World!&lt;/p&gt;</li>
+      <li>&lt;!-- This is a comment, it will not be displayed --&gt;</li>
+    
+  </code>
+
+            <dl>
+                &nbsp;
+                <dt>Bonus:</dt>
+                <dd>1. Use comments to explain code sections<br> 2. Use comments to disable code without deleting it</dd>
+                <dt>Additional Info:</dt>
+                <dd>- Comments do not affect page speed.<br> - Avoid overusing comments—write clean code instead.</dd>
+            </dl>
+        </section>
+        <section id="M2topic-1">
+            <hr>
+            <h2>Links</h2>
+            <ul>
+                <li>Links connect one webpage to another.</li>
+                <li>The &lt;a&gt; tag is used with the href attribute to specify the destination.</li>
+                <li>Links can open in the same tab or new tab using the target attribute.</li>
+                <li>They can also link to sections of the same page, email addresses, or files.</li>
+            </ul>
+
+            <h4 style="margin-left: 15px;">EXAMPLE :</h4>
+            <code class="m2ex-1">
+
+    <ul style="list-style-type: none;">
+      
+      <li>&lt;a href="https://www.google.com" target="_blank"&gt;Visit Google&lt;/a&gt;</li>
+      
+    </ul>
+  </code>
+            <dl>
+                <dt>Bonus:</dt>
+                <dd>1.Use target="_blank" for external websites so users don’t leave your site<br> 2.Add the title attribute for accessibility and better SEO.</dd>
+                <dt>Additional Info:</dt>
+                <dd>- HTML was first created in 1991 by Tim Berners-Lee.<br> - Current version: HTML5 (standard for modern web). <br> - Dont't skip heading levels(e.g., &lt;h2&gt; should follow &lt;h1&gt;).</dd>
+                <h3>Example :</h3>
+                <ul style="list-style-type: none; background-color: #494545; border-radius: 8px;">
+                    <li>&lt;a href="about.html" title="Go to About Page"&gt;About Us&lt;/a&gt;</li>
+
+                </ul>
+            </dl>
+
+
+            <section id="M2topic-2">
+                <hr>
+                <h2>Images</h2>
+                <ul>
+                    <li>Images are added using the &lt;img&gt; tag.</li>
+                    <li>The src attribute specifies the path of the image.</li>
+                    <li>The alt attribute provides text if the image fails to load (important for accessibility and SEO).</li>
+                    <li>You can control size with width and height.</li>
+                </ul>
+
+                <h4 style="margin-left: 15px;">EXAMPLE :</h4>
+                <code class="m2ex-2">
+    <ul style="list-style-type: none;">
+      <li style=" background-color: #494545; border-radius: 8px;">&lt;img src="logo.png" alt="Website Logo" width="200"&gt;</li>
+  </code>
+                <dl>
+                    &nbsp;
+                    <dt>Bonus:</dt>
+                    <dd>1.Always include alt text. <br> 2.Use relative paths for local images and absolute URLs for external images.<br>3. Use width="100%" for responsive banners.</dd>
+                    <dt>Additional Info:</dt>
+                    <dd>- Common formats: JPEG (photos), PNG (transparent backgrounds), GIF (animations), SVG (scalable vector graphics).<br> - Images can also be made responsive with max-width: 100% in CSS.</dd>
+                </dl>
+            </section>
+            <section id="M2topic-3">
+                <hr>
+                <h2>Lists</h2>
+                <ul>
+                    <li>Lists help organize content.</li>
+
+                    <li>Lists can be nested (list inside another list).
+
+                        <li>HTML supports:</li>
+                        <ul>
+                            <li>&lt;ul&gt; (unordered list — bullet points)</li>
+                            <li>&lt;ol&gt; (ordered list — numbers)</li>
+                            <li>&lt;dl&gt; (description list — terms with details)</li>
+                        </ul>
+                    </li>
+
+                </ul>
+
+                <h4 style="margin-left: 15px;">EXAMPLE :</h4>
+                <code class="m1ex-3">
+    <ul style="list-style-type: none; background-color:#494545">
+      <li>&lt;ul&gt;</li>
+      <li>  &lt;li&gt;HTML&lt;/li&gt;</li>
+      <li>  &lt;li&gt;CSS&lt;/li&gt;</li>
+      <li>&lt;/ul&gt;</li>
+    </ul>
+  </code>
+
+                <dl>
+
+                    <li>List Attributes:</li>
+                    <ul>
+                        <li>start → Defines the starting number in &lt;ol&gt;.</li>
+                        <li>reversed → Makes an ordered list count backwards.</li>
+                        <li>type → Defines numbering style (1, A, a, I, i).</li>
+                    </ul>
+                    <h4 style="margin-left: 15px;">EXAMPLE :</h4>
+                    <code class="m1ex-3">
+    <ul style="list-style-type: none; background-color:#494545">
+      <li>&lt;ol type="I" start="5" reversed&gt;</li>
+      <li>&lt;li&gt;Point One&lt;/li&gt;</li>
+      <li>&lt;li&gt;Point Two&lt;/li&gt;</li>
+      <li>&lt;/o&gt;</li>
+
+    </ul>
+  </code>
+
+                    <dt>Bonus:</dt>
+                    <dd>1.Use &lt;ol&gt; for steps or sequences.<br> 2. Use lists for navigation menus, steps in a process, or grouped data for better readability.</dd>
+                    <dt>Additional Info:</dt>
+                    <li>CSS can customize list markers (symbols, numbers, icons, or even images).</li>
+
+                </dl>
+            </section>
+            <section id="M2topic-4">
+                <hr>
+                <h2>Tables</h2>
+                <ul>
+                    <li>Tables are used for structured data</li>
+                    <li>&lt;table&gt; creates the table, &lt;tr&gt; defines rows, &lt;th&gt; defines headers, &lt;td&gt; defines data cells.</li>
+                    <li>Attributes like border can be used, but CSS styling is recommended.</li>
+                </ul>
+
+                <h4 style="margin-left: 15px;">EXAMPLE :</h4>
+                <code class="m2ex-4">
+    <ul style="list-style-type: none; background-color: #494545; height: 300px; width: 580px; border-radius: 10px; padding: 10px;" >
+      <li>&lt;table border="1"&gt;</li>
+      <li>&lt;tr&gt;</li>
+      <li>&nbsp;&lt;th&gt;Name&lt;/th&gt;</li>
+      <li>&nbsp;&lt;th&gt;Age&lt;/th&gt;</li>
+      <li>  &lt;/tr&gt;</li>
+      <li>  &lt;tr&gt;</li>
+      <li>   &nbsp; &lt;td&gt;Mohan&lt;/td&gt;</li>
+      <li>    &nbsp;&lt;td&gt;25&lt;/td&gt;</li>
+      <li>  &lt;/tr&gt;</li>
+      <li>&lt;/table&gt;</li>
+    
+  </code>
+
+                <dl>
+                    &nbsp;
+                    <dt>Bonus:</dt>
+                    <dd>1.Use &lt;caption&gt; to give titles to tables.<br> 2.Apply CSS for professional styling (borders, colors, spacing).</dd>
+                    <dt>Additional Info:</dt>
+                    <dd>- Avoid using tables for page layout; use them only for &nbsp;&nbsp;tabular data.<br> - For accessibility, always use table headers and captions&nbsp; &nbsp;(&lt;caption&gt;).<br>- Use &lt;thead&gt;, &lt;tbody&gt;, and &lt;tfoot&gt;
+                        for better structure and &nbsp; &nbsp; readability.<br> - Attributes like colspan and rowspan merge multiple cells.</dd>
+                </dl>
+                <h3>Example :</h3>
+                <ul style="list-style-type: none; background-color: #494545; border-radius: 10px; padding: 10px;">
+                    <li>&lt; table&gt;</li>
+                    <li>&lt; caption &gt; Student Data &lt; /caption &gt;
+
+                        <li>&lt;tr&gt;</li>
+                        <li> &nbsp;&nbsp;&nbsp;&lt;th&gt; Name &lt;/th&gt;</li>
+
+                        <li>&nbsp;&nbsp;&lt;&nbsp;th&gt; Age &lt;/th&gt; </li>
+
+                        <li>&lt;/tr&gt; </li>
+                        <li>&lt;tr&gt;</li>
+
+
+                        <li>&nbsp;&nbsp;&nbsp;&lt;td&gt; Mohan &lt;/td&gt;</li>
+
+                        <li>&nbsp;&nbsp;&nbsp;&lt;td&gt; 21 &lt;/td&gt; </li>
+
+                        <li>&lt; /tr &gt; </li>
+                        <li>&lt; /table &gt; </li>
+
+            </section>
+            <section id="M3topic-1">
+                <hr>
+                <h2>Forms (Input ,Textarea ,Select ,Button)</h2>
+                <ul>
+                    <li>Links connect one webpage to another.</li>
+                    <li>The &lt;a&gt; tag is used with the href attribute to specify the destination.</li>
+                    <li>Links can open in the same tab or new tab using the target attribute.</li>
+                    <li>They can also link to sections of the same page, email addresses, or files.</li>
+                </ul>
+
+                <h4 style="margin-left: 15px;">EXAMPLE :</h4>
+                <code class="m3ex-1">
+
+    <ul style="list-style-type: none;">
+      
+      <li>&lt;a href="https://www.google.com" target="_blank"&gt;Visit Google&lt;/a&gt;gt;</li>
+      
+    </ul>
+  </code>
+                <dl>
+                    <dt>Bonus:</dt>
+                    <dd>1.Use target="_blank" for external websites so users don’t leave your site<br> 2.Add the title attribute for accessibility and better SEO.</dd>
+                    <dt>Additional Info:</dt>
+                    <dd>- HTML was first created in 1991 by Tim Berners-Lee.<br> - Current version: HTML5 (standard for modern web). <br> - Dont't skip heading levels(e.g., &lt;h2&gt; should follow &lt;h1&gt;).</dd>
+                    <h3>Example :</h3>
+                    <ul style="list-style-type: none;">
+                        <li>&lt;a href="about.html" title="Go to About Page"&gt;About Us&lt;/a&gt;</li>
+
+                    </ul>
+                </dl>
+
+
+            </section>
+        </section>
+
+
+
+
+
+</body>
+
+</html>
