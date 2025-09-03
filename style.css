@@ -124,3 +124,9 @@ footer {
   color: white;
   margin-top: 180px;
 }
+@media(min-width:320px)and (max-width:480px) {
+  *{
+    flex-direction: column;
+  }
+  
+}

@@ -16,7 +16,7 @@ html {
     position: fixed;
     top: 0;
     left: 0;
-    width: 295px;
+    width: 290px;
     height: 100%;
     overflow-y: auto;
     
@@ -188,5 +188,94 @@ summary {
     width: 500px;
 }
 
+@media(min-width:320px) and (max-width:480px){
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 130px;
+    height: 100%;
+    overflow-y: auto;
+    
+    background: linear-gradient(to right, #161A1D, #021321);
+    border-right: 1px solid #222;
+    padding-top: 20px;
+}
+.sidebar::-webkit-scrollbar {
+  width: 4px;              
+}
 
+.sidebar::-webkit-scrollbar-track {
+  background: #222;        
+}
 
+.sidebar::-webkit-scrollbar-thumb {
+  background: #555;         
+  border-radius: 4px;
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+  background: #888;         
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.sidebar a {
+    display: block;
+    padding: 10px 25px;
+    text-decoration: none;
+    color: #bbb;
+    transition: background 0.3s, color 0.3s;
+}
+.modules {
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+.content {
+    margin-left: 250px;
+    padding: 30px;
+    flex: 1;
+}
+
+.content h1 {
+    font-size: 5px;
+    margin-bottom: 10px;
+}
+
+.content p {
+    max-width: 800px;
+    line-height: 1.6;
+    font-size: 10px;
+    color: #ccc;
+}
+
+summary {
+    font-size: 12px;
+    padding: 5px;
+}
+#module-1 a {
+    text-decoration: none;
+    color: aliceblue;
+    padding: 5px;
+}
+
+#module-1 ul li {
+    margin-top: 5%;
+    margin-left: 0%;
+}
+#M1topic-1 {
+    margin-top: 300px;
+    margin-left: -5%;
+    line-height: 20px;
+    font-size: 7px;
+    font-style: bold;
+    display: block;
+    clear: both;
+}
+
+}
