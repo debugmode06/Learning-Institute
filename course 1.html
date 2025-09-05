@@ -119,6 +119,43 @@
     <section class="intro">
     <h2>Frontend Development Course</h2>
 <p>Master the art of creating engaging, responsive, and user-friendly websites. This course covers HTML, CSS, JavaScript, and modern frameworks to help you design stunning web interfaces. Learn by building real-world projects and gain the skills needed to start your journey as a professional frontend developer.</p>
+<section>
+<aside>
+   
+    
+    <details>
+        <summary style="list-style-type: none; " class="code-run" >&#9654;</summary>
+          <title>Test Your Code</title>
+  <div class="popup">
+    <header>Test Your Code</header>
+
+    <div class="editor">
+      <textarea id="code" placeholder="Write your HTML code here..."></textarea>
+      <button onclick="runCode()">Run</button>
+    </div>
+
+    <div class="output">
+      <iframe id="preview"></iframe>
+    </div>
+  </div>
+
+  <script>
+    function runCode() {
+      let code = document.getElementById("code").value;
+      let previewFrame = document.getElementById("preview").contentWindow.document;
+      previewFrame.open();
+      previewFrame.write(code);
+      previewFrame.close();
+    }
+  </script>
+
+    </details>
+    
+</aside>
+  </section>
+
+
+
 
     <section id="M1topic-1">
         <hr>
@@ -272,7 +309,7 @@
                 <dt>Additional Info:</dt>
                 <dd>- HTML was first created in 1991 by Tim Berners-Lee.<br> - Current version: HTML5 (standard for modern web). <br> - Dont't skip heading levels(e.g., &lt;h2&gt; should follow &lt;h1&gt;).</dd>
                 <h3>Example :</h3>
-                <ul style="list-style-type: none; background-color: #68636380;; border-radius: 8px;">
+                <ul style="list-style-type: none; background-color: #68636380;; border-radius: 8px; width: 60%;">
                     <li>&lt;a href="about.html" title="Go to About Page"&gt;About Us&lt;/a&gt;</li>
 
                 </ul>
@@ -292,7 +329,7 @@
                 <h4 style="margin-left: 15px;">EXAMPLE :</h4>
                 <code class="m2ex-2">
     <ul style="list-style-type: none;">
-      <li style=" background-color: #68636380; border-radius: 8px;">&lt;img src="logo.png" alt="Website Logo" width="200"&gt;</li>
+      <li style=" background-color: #68636380; border-radius: 8px;width: 60%;">&lt;img src="logo.png" alt="Website Logo" width="200"&gt;</li>
   </code>
                 <dl>
                     &nbsp;
